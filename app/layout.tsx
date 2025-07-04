@@ -34,7 +34,7 @@ export default function RootLayout({
 
           <main className="flex-1 flex flex-col">
             <Navbar />
-            <section className="flex-1 p-8">{children}</section>
+            <div className="flex-1 p-8">{children}</div>
           </main>
         </div>
       </body>
