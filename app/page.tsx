@@ -2,7 +2,7 @@ import AtGlance from "@/components/dashboard/AtGlance";
 import Insights from "@/components/dashboard/Insights";
 import Orders from "@/components/dashboard/Orders";
 
-export default function Home() {
+const Page = () => {
   return (
     <>
       <AtGlance />
@@ -10,4 +10,6 @@ export default function Home() {
       <Orders />
     </>
   );
-}
+};
+
+export default Page;
