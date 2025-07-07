@@ -4,13 +4,13 @@ export const sidebarData: SidebarItem[] = [
   {
     id: "home",
     label: "Home",
-    icon: "/svg/house.svg",
+    icon: "/svg/House.svg",
     href: "/",
     isActive: true,
   },
   {
-    id: "chat",
-    label: "Chat",
+    id: "chats",
+    label: "Chats",
     icon: "/svg/ChatTeardrop.svg",
     href: "/chat",
   },
@@ -18,6 +18,6 @@ export const sidebarData: SidebarItem[] = [
     id: "users",
     label: "Users",
     icon: "/svg/UsersFour.svg",
-    href: "/users",
+    href: "/user",
   },
 ];
