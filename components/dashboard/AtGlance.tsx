@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import PageLayout from "../shared/PageLayout";
 import StatsCard from "../shared/StatsCard";
-import { atGlanceData } from "@/constants/AtGlanceData";
+import { atGlanceData } from "@/data/mock/AtGlance.data";
 
 const AtGlance = () => {
   return (

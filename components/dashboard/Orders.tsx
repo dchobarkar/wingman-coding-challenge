@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import PageLayout from "../shared/PageLayout";
-import { ordersData, Order } from "./ordersData";
+import { ordersData, Order } from "@/data/mock/Orders.data";
 
 const PAGE_SIZE = 4;
 
@@ -115,6 +115,7 @@ const Orders = () => {
             ))}
           </tbody>
         </table>
+
         {/* Pagination */}
         <div className="flex justify-end items-center gap-2 px-6 py-4 border-t border-gray-100">
           <button

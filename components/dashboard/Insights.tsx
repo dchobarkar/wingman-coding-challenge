@@ -18,7 +18,7 @@ import {
   consultationsChartData,
   vsPastPeriodData,
   forecastCards,
-} from "./insightsData";
+} from "@/data/mock/Insights.data";
 
 const Insights = () => {
   return (
@@ -72,6 +72,7 @@ const Insights = () => {
             </ResponsiveContainer>
           </div>
         </div>
+
         {/* Vs Past Period Chart */}
         <div className="bg-white rounded-[20px] shadow p-6 flex flex-col">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
@@ -104,6 +105,7 @@ const Insights = () => {
             </ResponsiveContainer>
           </div>
         </div>
+
         {/* Forecasts Card */}
         <div className="rounded-[20px] shadow p-6 flex flex-col justify-center min-h-[300px] bg-gradient-to-br from-[#3CB4F1] to-[#0A726F]">
           {forecastCards.map((card, idx) => (
