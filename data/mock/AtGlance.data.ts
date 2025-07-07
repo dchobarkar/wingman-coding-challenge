@@ -1,7 +1,7 @@
-export interface AtGlanceStat {
-  iconSrc: string;
+export interface AtGlanceData {
   title: string;
   value: string | number;
+  iconSrc: string;
   trend?: {
     direction: "up" | "down";
     percent: string;
@@ -9,7 +9,7 @@ export interface AtGlanceStat {
   };
 }
 
-export const atGlanceData: AtGlanceStat[] = [
+export const atGlanceData: AtGlanceData[] = [
   {
     iconSrc: "/svg/ChatTeardrop.svg",
     title: "Consultations",
@@ -17,33 +17,33 @@ export const atGlanceData: AtGlanceStat[] = [
     trend: { direction: "up", percent: "15%", label: "increase" },
   },
   {
-    iconSrc: "/svg/Tag.svg",
     title: "Orders Placed",
     value: 12,
+    iconSrc: "/svg/Tag.svg",
     trend: { direction: "down", percent: "15%", label: "decrease" },
   },
   {
-    iconSrc: "/svg/CheckFat.svg",
     title: "Conversion",
     value: "50%",
+    iconSrc: "/svg/CheckFat.svg",
     trend: { direction: "down", percent: "15%", label: "decrease" },
   },
   {
-    iconSrc: "/svg/Coins.svg",
     title: "Total Sales Value",
     value: "$2,400",
+    iconSrc: "/svg/Coins.svg",
     trend: { direction: "up", percent: "15%", label: "increase" },
   },
   {
-    iconSrc: "/svg/Coins.svg",
     title: "Avg Order Value",
     value: "$240",
+    iconSrc: "/svg/Coins.svg",
     trend: { direction: "up", percent: "15%", label: "increase" },
   },
   {
-    iconSrc: "/svg/PiggyBank.svg",
     title: "Commission Paid",
     value: "$240",
+    iconSrc: "/svg/PiggyBank.svg",
     trend: { direction: "up", percent: "15%", label: "increase" },
   },
 ];
