@@ -8,7 +8,7 @@ const AtGlance = () => {
   return (
     <PageLayout>
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-geist-sans">At a glance</h2>
+        <h2 className="text-3xl font-semibold font-geist-sans">At a glance</h2>
         <select className="border border-gray-200 rounded-lg px-3 py-1 text-sm bg-white">
           <option>7 days</option>
           <option>30 days</option>

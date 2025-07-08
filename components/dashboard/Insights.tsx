@@ -24,14 +24,23 @@ const Insights = () => {
   return (
     <PageLayout>
       <div className="mb-6">
-        <h2 className="text-2xl font-geist-sans">Insights</h2>
+        <h2 className="text-3xl font-semibold font-geist-sans">Insights</h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Consultations Chart */}
         <div className="bg-white rounded-[20px] shadow p-6 flex flex-col">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">
-            Consultations
-          </h3>
+          <div className="flex items-center mb-2">
+            <Image
+              src="/svg/ChatTeardrop.svg"
+              alt="Consultation SVG"
+              height={16}
+              width={16}
+            />
+            <h3 className="text-lg font-semibold text-gray-900 pl-2">
+              CONSULTATIONS
+            </h3>
+          </div>
+
           <div className="flex-1 min-h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart
@@ -75,9 +84,18 @@ const Insights = () => {
 
         {/* Vs Past Period Chart */}
         <div className="bg-white rounded-[20px] shadow p-6 flex flex-col">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">
-            Vs Past Period
-          </h3>
+          <div className="flex items-center mb-2">
+            <Image
+              src="/svg/ChatBar.svg"
+              alt="Vector SVG"
+              height={16}
+              width={16}
+            />
+            <h3 className="text-lg font-semibold text-gray-900 pl-2">
+              VS PAST PERIOD
+            </h3>
+          </div>
+
           <div className="flex-1 min-h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart
@@ -107,7 +125,16 @@ const Insights = () => {
         </div>
 
         {/* Forecasts Card */}
-        <div className="rounded-[20px] shadow p-6 flex flex-col justify-center min-h-[300px] bg-gradient-to-br from-[#3CB4F1] to-[#0A726F]">
+        <div className="rounded-[20px] shadow p-6 flex flex-col justify-around min-h-[300px] bg-gradient-to-br from-[#3CB4F1] to-[#0A726F]">
+          <div className="flex items-center mb-2">
+            <Image
+              src="/svg/ChatTeardrop.svg"
+              alt="Chat SVG"
+              height={16}
+              width={16}
+            />
+            <h3 className="text-lg font-semibold text-white pl-2">FORECASTS</h3>
+          </div>
           {forecastCards.map((card, idx) => (
             <div key={idx} className="mb-6 last:mb-0">
               <div className="flex items-center gap-2 mb-2">

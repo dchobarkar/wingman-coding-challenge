@@ -34,7 +34,9 @@ export default function RootLayout({
 
           <main className="flex-1 flex flex-col">
             <Navbar />
-            <div className="flex-1 p-8">{children}</div>
+            <div className="flex-1 p-4 m-12 rounded-[20px] shadow bg-background">
+              {children}
+            </div>
           </main>
         </div>
       </body>

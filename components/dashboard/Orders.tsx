@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 import PageLayout from "../shared/PageLayout";
 import { ordersData, Order } from "@/data/mock/Orders.data";
@@ -31,7 +32,7 @@ const Orders = () => {
 
   return (
     <PageLayout>
-      <h2 className="text-2xl font-geist-sans mb-6">Orders</h2>
+      <h2 className="text-3xl font-semibold font-geist-sans mb-6">Orders</h2>
       <div className="bg-white rounded-[20px] shadow p-0 overflow-x-auto">
         <table className="min-w-full text-sm">
           <thead>
@@ -97,10 +98,10 @@ const Orders = () => {
                 <td className="px-6 py-4 font-bold whitespace-nowrap">
                   {order.commission}
                 </td>
-                <td className="px-6 py-4 text-right">
-                  <a
+                <td className="px-6 py-4">
+                  <Link
                     href={order.chatLink}
-                    className="flex items-center gap-1 text-primary hover:underline"
+                    className="flex items-center gap-1 hover:underline"
                   >
                     View Chat
                     <Image
@@ -108,8 +109,9 @@ const Orders = () => {
                       alt="View Chat"
                       width={16}
                       height={16}
+                      className="ml-2"
                     />
-                  </a>
+                  </Link>
                 </td>
               </tr>
             ))}
