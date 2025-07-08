@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { sidebarData } from "@/data/mock/Sidebar.data";
+import { sidebarData } from "@/data/mock/SideMobilebar.data";
 
 const Sidebar = () => {
   const pathname = usePathname();
