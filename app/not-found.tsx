@@ -26,12 +26,9 @@ export default function NotFound() {
           </Link>
 
           <div className="text-sm text-gray-400">
-            <button
-              onClick={() => window.history.back()}
-              className="hover:text-gray-600 transition-colors"
-            >
+            <Link href="/" className="hover:text-gray-600 transition-colors">
               ← Go back
-            </button>
+            </Link>
           </div>
         </div>
       </div>
